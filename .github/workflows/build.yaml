@@ -1,6 +1,7 @@
 # every push to a branch: build binary
 name: Build
 on:
+  workflow_dispatch:
   pull_request:
     types: [opened, synchronize]
 jobs:
